@@ -1,6 +1,4 @@
-/* Copyright (c) 2015-2016 MIT 6.005 course staff, all rights reserved.
- * Redistribution of original or derived work requires permission of course staff.
- */
+
 package graph;
 
 import static org.junit.Assert.*;
@@ -11,14 +9,7 @@ import java.util.Map;
 
 import org.junit.Test;
 
-/**
- * Tests for ConcreteVerticesGraph.
- * 
- * This class runs the GraphInstanceTest tests against ConcreteVerticesGraph, as
- * well as tests for that particular implementation.
- * 
- * Tests against the Graph spec should be in GraphInstanceTest.
- */
+
 public class ConcreteVerticesGraphTest extends GraphInstanceTest {
     
     /*
@@ -28,9 +19,6 @@ public class ConcreteVerticesGraphTest extends GraphInstanceTest {
         return new ConcreteVerticesGraph<>();
     }
     
-    /*
-     * Testing ConcreteVerticesGraph...
-     */
     
     // Testing strategy for ConcreteVerticesGraph.toString()
     //   TODO
@@ -1029,70 +1017,4 @@ public class ConcreteVerticesGraphTest extends GraphInstanceTest {
         assertTrue("Expected source1 to be a source", isSource);
     }
 
-//    @Test
-//    //covers empty vertex
-//    public void testToStringEmptyVertex(){
-//        final Vertex<String> vertex = new Vertex<>("vertex");
-//        final String label = vertex.getLabel();
-//        String stringRep = vertex.toString();
-//        
-//        String regex = String.format("label: %s, sources: %d, targets: %d",
-//                label, 0, 0);
-//        
-//        assertTrue("Expected correct vertex string rep",stringRep.matches(regex));
-//    }
-//    @Test
-//    //covers vertex contains sources but no targets
-//    public void testToStringMultipleSourcesNoTargets(){
-//        final Vertex<String> vertex = new Vertex<>("vertex");
-//        
-//        vertex.addSource("source1", 1);
-//        vertex.addSource("source2", 1);
-//        
-//        final String label = vertex.getLabel();
-//        final int numSources = vertex.getSources().size();
-//        String stringRep = vertex.toString();
-//        
-//        String regex = String.format("label: %s, sources: %d, targets: %d",
-//                label, numSources, 0);
-//        
-//        assertTrue("Expected correct vertex string rep",stringRep.matches(regex));
-//    }
-//    @Test
-//    //covers vertex contains targets but no sources
-//    public void testToStringMultipleTargetsNoSources(){
-//        final Vertex<String> vertex = new Vertex<>("vertex");
-//        
-//        vertex.addTarget("target1", 1);
-//        vertex.addTarget("target2", 1);
-//        
-//        final String label = vertex.getLabel();
-//        final int numTargets = vertex.getTargets().size();
-//        String stringRep = vertex.toString();
-//        
-//        String regex = String.format("label: %s, sources: %d, targets: %d",
-//                label, 0, numTargets);
-//        
-//        assertTrue("Expected correct vertex string rep",stringRep.matches(regex));
-//    }
-//    @Test
-//    //covers vertex contains sources and targets
-//    public void testToStringMultipleTargetsSources(){
-//        final Vertex<String> vertex = new Vertex<>("vertex");
-//        
-//        vertex.addSource("source1", 1);
-//        vertex.addSource("source2", 1);
-//        vertex.addTarget("target1", 1);
-//        vertex.addTarget("target2", 1);
-//        
-//        final String label = vertex.getLabel();
-//        final int numSources = vertex.getSources().size();
-//        final int numTargets = vertex.getTargets().size();
-//        String stringRep = vertex.toString();
-//        
-//        String regex = String.format("label: %s, sources: %d, targets: %d",
-//                label, numSources, numTargets);
-//        
-//        assertTrue("Expected correct vertex string rep",stringRep.matches(regex));
-//    }
 }  
