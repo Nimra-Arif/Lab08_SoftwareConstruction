@@ -1,6 +1,4 @@
-/* Copyright (c) 2015-2016 MIT 6.005 course staff, all rights reserved.
- * Redistribution of original or derived work requires permission of course staff.
- */
+
 package graph;
 
 import static org.junit.Assert.*;
@@ -21,54 +19,7 @@ import org.junit.Test;
  * Your tests MUST NOT refer to specific concrete implementations.
  */
 public abstract class GraphInstanceTest {
-    // NB: we are using an abstract class to allow the use of
-    // different test classes for different implementations.
-    // Our tests, all tests should be implementation-independent
-    // for this very reason
-    //
-    // Testing strategy
-    //   TODO
-    //   Partition for graph.add(label)
-    //      graph: empty, contains multiple vertices
-    //      label: exists in graph, doesn't exist in graph
-    //      output: if add() returns true, graph is modified
-    //              ie number of vertices increases by 1
-    //              else graph unmodified
-    //      observe with vertices()
-    //
-    //   Partition for graph.remove(label)
-    //      graph: empty, contains multiple vertices
-    //      label: exists in graph, doesn't exist in graph,
-    //             exists in edges, doesnt exist in an edge
-    //      output: if remove() returns true, graph is modified
-    //              ie number of vertices decreases by 1
-    //              else graph unmodified
-    //      observe with vertices(), sources(), targets()
-    //   
-    //   Partition for graph.set(source,target,weight) -> previousWeight
-    //      graph: empty, contains multiple vertices    
-    //      source: exists in graph, doesn't exist in graph
-    //      target: exists in graph, doesn't exist in graph
-    //      No edge exists from source to target,
-    //      An edge exists from source to target,
-    //      weight: 0, > 0
-    //      observe with sources(), targets(), vertices()
-    //    
-    //   Partition for graph.vertices() -> allVertices
-    //      graph: empty, contains multiple vertices
-    //   
-    //   Partition for graph.sources(target) -> targetSources
-    //      graph: empty, contains multiple vertices
-    //      target: doesn't exist in graph, exists in graph,
-    //              has no sources, has multiple sources
-    //      targetSources contains all source vertices to target
-    //      
-    //   Partition for graph.targets(source) -> sourceTargets
-    //      graph: empty, contains multiple vertices
-    //      source: doesn't exist in graph, exists in graph,
-    //             has no targets, has multiple targets
-    //      sourceTargets contains all target vertices from source
-    //
+    
     
     /**
      * Overridden by implementation-specific test classes.
