@@ -39,7 +39,7 @@ This lab focuses on designing, testing, and implementing abstract data types (AD
 - **Files:** 
   - `ConcreteEdgesGraph.java`
   - `ConcreteEdgesGraphTest.java`
-  - `Edge.java`
+
 - **Description:** We have implemented the `ConcreteEdgesGraph` class using the provided representation. We Designed the specification and representation for the `Edge` class, ensuring it is immutable. Devised, documented, and implemented tests for the `Edge` class in `ConcreteEdgesGraphTest.java`.
 
 #### Task 2.2: Implement ConcreteVerticesGraph
@@ -47,7 +47,7 @@ This lab focuses on designing, testing, and implementing abstract data types (AD
 - **Files:** 
   - `ConcreteVerticesGraph.java`
   - `ConcreteVerticesGraphTest.java`
-  - `Vertex.java`
+ 
 - **Description:** We have implemented the `ConcreteVerticesGraph` class using the provided representation. We designed the specification and representation for the `Vertex` class, ensuring it is mutable. Devised, documented, and implemented tests for the `Vertex` class in `ConcreteVerticesGraphTest.java.
 
 
