@@ -28,7 +28,7 @@ This lab focuses on designing, testing, and implementing abstract data types (AD
 
 #### Task 1.1: Write Tests for Graph<String>
 
-- **File:** `GraphInstanceTest.java`
+- **File:** `GraphStaticTest.java`
 - **Description:** We have Devised, documented, and implemented tests for the `Graph<String>` ADT. Ensured that the tests were legal clients of the Graph spec.
 - **Note:** We Used the `emptyInstance()` method to obtain fresh empty graphs, not `Graph.empty()`. See the provided `testInitialVerticesEmpty()` for an example.
 
