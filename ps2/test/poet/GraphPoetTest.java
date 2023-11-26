@@ -87,24 +87,37 @@ public class GraphPoetTest {
         assertEquals("Expected unchanged input", input, output);
     }
     @Test
+
+
     // covers multiple words
     public void testPoem_MultipleWords() {
         String input = "Seek to explore new and exciting synergies!";
         String output = graphOneLine.poem(input);
+        
         String expected = "Seek to explore strange new life and exciting synergies!";
         
+
         assertEquals("Expected poetic output with words in input unchanged",
                 expected, output);
+
+
+
     }
 
     @Test
     // covers word pairs with adjacency count > 1   
     public void testPoem_MultipleAdjacencies() {
+
+
+
         String input = "you MAY me";
+
+
         String output = graphMultipleLines.poem(input);
         
         assertNotEquals("Expected a bridge word inserted",
                 input, output);
+
         assertTrue("Expected input words unchanged",
                 output.contains("you") && output.contains("MAY"));
         assertTrue("Expected correct bridge word", 
@@ -113,5 +126,8 @@ public class GraphPoetTest {
                 || output.contains("kill")
                 || output.contains("cut")
                 || output.contains("shoot"));
+
+
+
     }
 }
