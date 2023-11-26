@@ -1,6 +1,4 @@
-/* Copyright (c) 2015-2016 MIT 6.005 course staff, all rights reserved.
- * Redistribution of original or derived work requires permission of course staff.
- */
+
 package graph;
 
 import static org.junit.Assert.*;
@@ -12,21 +10,8 @@ import java.util.Set;
 
 import org.junit.Test;
 
-/**
- * Tests for instance methods of Graph.
- * 
- * <p>PS2 instructions: you MUST NOT add constructors, fields, or non-@Test
- * methods to this class, or change the spec of {@link #emptyInstance()}.
- * Your tests MUST only obtain Graph instances by calling emptyInstance().
- * Your tests MUST NOT refer to specific concrete implementations.
- */
-public abstract class GraphInstanceTest {
-    // NB: we are using an abstract class to allow the use of
-    // different test classes for different implementations.
-    // Our tests, all tests should be implementation-independent
-    // for this very reason
-    //
-    // Testing strategy
+
+// Testing strategy
     //   TODO
     //   Partition for graph.add(label)
     //      graph: empty, contains multiple vertices
@@ -69,6 +54,17 @@ public abstract class GraphInstanceTest {
     //             has no targets, has multiple targets
     //      sourceTargets contains all target vertices from source
     //
+
+/**
+ * Tests for instance methods of Graph.
+ * 
+ * <p>PS2 instructions: you MUST NOT add constructors, fields, or non-@Test
+ * methods to this class, or change the spec of {@link #emptyInstance()}.
+ * Your tests MUST only obtain Graph instances by calling emptyInstance().
+ * Your tests MUST NOT refer to specific concrete implementations.
+ */
+public abstract class GraphInstanceTest {
+    
     
     /**
      * Overridden by implementation-specific test classes.
